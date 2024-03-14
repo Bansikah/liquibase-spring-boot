@@ -18,9 +18,8 @@ public class PersonController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Person> addPerson(@RequestBody Person person) {
-        Person savedPerson = repository.save(person);
-        return ResponseEntity.ok(savedPerson);
+    public Person addPerson(@RequestBody Person person) {
+        return repository.save(person);
     }
 
     @GetMapping("/{id}")
