@@ -8,6 +8,7 @@ class SpringbootliquibaseApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("contextLoads");
     }
 
 }
